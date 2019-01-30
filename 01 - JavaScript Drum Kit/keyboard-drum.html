@@ -1,100 +1,92 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Drum on!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="noun_drums_1201765.png"
+      type="image/x-icon"
+    />
 
     <style type="text/css">
-        body {
-            font-family: sans-serif;
-            background: url(bg.jpg) no-repeat;
-            background-size: cover;
-        }
+      body {
+        font-family: sans-serif;
+        background: url(bg.jpg) no-repeat;
+        background-size: cover;
+      }
 
-        .key {
-            width: 130px;
-            height: 130px;
-            background-color: rgba(0, 0, 0, 0.281);
-            border: 3px black solid;
-            border-radius: 20%;
-            transition: 0.07s;
+      .key {
+        width: 130px;
+        height: 130px;
+        background-color: rgba(0, 0, 0, 0.281);
+        border: 3px black solid;
+        border-radius: 20%;
+        transition: 0.07s;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .playing {
-            transform: scale(1.1);
-            border-color: #36bd53;
-            box-shadow: 0 0 8px #36bd53;
-        }
+      .playing {
+        transform: scale(1.1);
+        border-color: #36bd53;
+        box-shadow: 0 0 8px #36bd53;
+      }
 
-        .flex {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 100vh;
-        }
+      .flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+      }
 
-        kbd {
-            font-size: 38px;
-            color: white;
-        }
+      kbd {
+        font-size: 38px;
+        color: white;
+      }
 
-        .sound {
-            font-size: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.2px;
-            color: #36bd53;
-        }
+      .sound {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        color: #36bd53;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <div class="flex">
-        <div data-key="65" class="key">
-            <kbd>A</kbd>
-            <span class="sound">clap</span>
-        </div>
-        <div data-key="83" class="key">
-            <kbd>S</kbd>
-            <span class="sound">hihat</span>
-        </div>
-        <div data-key="68" class="key">
-            <kbd>D</kbd>
-            <span class="sound">kick</span>
-        </div>
-        <div data-key="70" class="key">
-            <kbd>F</kbd>
-            <span class="sound">openhat</span>
-        </div>
-        <div data-key="71" class="key">
-            <kbd>G</kbd>
-            <span class="sound">boom</span>
-        </div>
-        <div data-key="72" class="key">
-            <kbd>H</kbd>
-            <span class="sound">ride</span>
-        </div>
-        <div data-key="74" class="key">
-            <kbd>J</kbd>
-            <span class="sound">snare</span>
-        </div>
-        <div data-key="75" class="key">
-            <kbd>K</kbd>
-            <span class="sound">tom</span>
-        </div>
-        <div data-key="76" class="key">
-            <kbd>L</kbd>
-            <span class="sound">tink</span>
-        </div>
+      <div data-key="65" class="key">
+        <kbd>A</kbd> <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd> <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd> <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd> <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd> <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd> <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd> <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd> <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd> <span class="sound">tink</span>
+      </div>
     </div>
 
     <audio data-key="65" src="sounds/clap.wav"></audio>
@@ -108,10 +100,6 @@
     <audio data-key="76" src="sounds/tink.wav"></audio>
     <!-- Visit http://keycode.info/ to understand better which key belongs to what -->
 
-
-    <script type="text/javascript">
-
-    </script>
-</body>
-
+    <script src="drums.js"></script>
+  </body>
 </html>
