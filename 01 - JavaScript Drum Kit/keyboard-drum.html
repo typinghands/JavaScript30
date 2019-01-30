@@ -14,39 +14,55 @@
     <style type="text/css">
       body {
         font-family: sans-serif;
-        background: url(bg.jpg) no-repeat;
+        background: url(bg.jpg) no-repeat rgb(37, 36, 36);
         background-size: cover;
-      }
-
-      .key {
-        width: 130px;
-        height: 130px;
-        background-color: rgba(0, 0, 0, 0.281);
-        border: 3px black solid;
-        border-radius: 20%;
-        transition: 0.07s;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .playing {
-        transform: scale(1.1);
-        border-color: #36bd53;
-        box-shadow: 0 0 8px #36bd53;
       }
 
       .flex {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         height: 100vh;
       }
 
       kbd {
-        font-size: 38px;
+        font-size: 30px;
         color: white;
+
+        position: relative;
+        top:20px; 
+        left:50%;
+      }
+
+      span{
+
+        position: relative;
+        top:60px;    
+        right:10%; 
+      }
+
+      .key {
+        width: 120px;
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0.281);
+        border: 3px black solid;
+        border-radius: 20%;
+        z-index: -1;
+      }
+
+      .transparentDiv{
+        width: 120px;
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0.034);
+        border-radius: 20%;
+        z-index: 2;
+      }
+
+      .playing {
+        transform: scale(1.1);
+        border-color: #36bd53;
+        box-shadow: 0 0 8px #36bd53;
       }
 
       .sound {
@@ -60,8 +76,10 @@
 
   <body>
     <div class="flex">
-      <div data-key="65" class="key">
-        <kbd>A</kbd> <span class="sound">clap</span>
+      <div class="transparentDiv">
+          <div data-key="65" class="key">
+            <kbd>A</kbd> <span class="sound">clap</span>
+          </div>
       </div>
       <div data-key="83" class="key">
         <kbd>S</kbd> <span class="sound">hihat</span>
