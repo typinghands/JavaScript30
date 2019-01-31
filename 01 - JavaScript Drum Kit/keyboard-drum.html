@@ -19,8 +19,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        height: 100vh;
-        z-index: -2;
+        height: 50vh;
       }
 
       kbd {
@@ -44,7 +43,6 @@
         background-color: rgba(0, 0, 0, 0.281);
         border: 3px black solid;
         border-radius: 20%;
-        z-index: -1;
         transition-duration: 0.8ms;
       }
 
@@ -60,11 +58,18 @@
         letter-spacing: 0.2px;
         color: #36bd53;
       }
+
+      #drumLogo {
+        margin-top: 20px;
+        margin-left: 30px;
+        height: 120px;
+      }
     </style>
   </head>
 
   <body>
-    <img src="images/drumOn.svg" alt="Drum On" />
+    <img src="images/drum-on.svg" alt="Drum On" id="drumLogo" />
+
     <div class="flex">
       <div data-key="65" class="key" id="test1">
         <kbd>A</kbd> <span class="sound">clap</span>
@@ -94,7 +99,6 @@
         <kbd>L</kbd> <span class="sound">tink</span>
       </div>
     </div>
-    <img src="images/keyboard-icon.svg" alt="" />
 
     <audio data-key="65" src="sounds/clap.wav"></audio>
     <audio data-key="83" src="sounds/hihat.wav"></audio>
