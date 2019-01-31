@@ -5,16 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Drum on!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="noun_drums_1201765.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
 
     <style type="text/css">
       body {
         font-family: sans-serif;
-        background: url(bg.jpg) no-repeat rgb(37, 36, 36);
+        background: url(./images/bg.jpg) no-repeat rgb(37, 36, 36);
         background-size: cover;
       }
 
@@ -68,6 +64,7 @@
   </head>
 
   <body>
+    <img src="images/drumOn.svg" alt="Drum On" />
     <div class="flex">
       <div data-key="65" class="key" id="test1">
         <kbd>A</kbd> <span class="sound">clap</span>
@@ -97,6 +94,7 @@
         <kbd>L</kbd> <span class="sound">tink</span>
       </div>
     </div>
+    <img src="images/keyboard-icon.svg" alt="" />
 
     <audio data-key="65" src="sounds/clap.wav"></audio>
     <audio data-key="83" src="sounds/hihat.wav"></audio>
